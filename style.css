@@ -1,4 +1,5 @@
  @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
 body{
 	margin: 0;
 	padding: 0;
@@ -868,6 +869,9 @@ body{
    background: #fff;
    position: relative;
 }
+ .blog_list_sec .container .post .body_post .post_content h1 a{
+   text-decoration: none;
+}
  .blog_list_sec .container .post .body_post .post_content h1 {
    font-size: 20px;
    font-weight: bold;
@@ -1002,21 +1006,155 @@ body{
 
 /*blog single*/
 
-.blog_sec .blog_img{
-  background: linear-gradient(to bottom,rgba(0,0,0,0.5),rgba(0,0,0,0.9)), url(img/back.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+.blog_main_section .header_blog{
+  background-color: #e7e5e4;
+  padding: 70px 110px;
+  box-shadow: 1px 6px 10px rgba(0,0,0,0.3);
+}
+.blog_main_section .container h2{
+   font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-rendering: optimizeLegibility;
+   color: #131313;
+  letter-spacing: .15em;
+  text-shadow: 1px 5px 5px rgba(0,0,0,0.5);
+}
+.blog_main_section .container a{
+  text-decoration: none;
+  color: #000;
+}
+.blog_main_section .header_blog{
+  margin-bottom: 20px;
+}
+.blog_main_section .body{
+  margin: auto 70px;
+}
+
+.blog_main_section .blog_img{
   width: 100%;
   height: 60vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: column;
+  border-radius: 5px;
+  background: url(img/back.jpg);
+  background-position: center;
+  background-size: cover;
+  transition: 0.4s;
+  background-repeat: no-repeat;
+}
+
+.blog_main_section .blog_img:before{
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.1);
+  display: none;
+  transition: 0.4s;
+  }
+  .blog_main_section .blog_img:hover::before{
+    display: block;
+  }
+  .blog_main_section .body p{
+  color: rgba(0,0,0,0.4);
+}
+.blog_main_section .body .date{
+  padding: 5px 15px;
+  border-radius: 4px;
+  background: #1D3157;
+  position: relative;
+  width:120px;
+  font-weight: 500;
   color: #fff;
-  padding-top: 7rem;
-  border-radius: 10px;
- }
- .blog_sec .blog_img h2{
+}
+.blog_main_section .blog_body p{
+  color: rgba(0,0,0,0.8);
+}
+.blog_main_section .body{
+}
+.blog_main_section .author a, .blog_main_section .tags a{
+  text-decoration: none;
+  color: #1D3157;
+  font-size: 1rem;
+  transition: 0.4s;
   font-weight: 600;
- }
+}
+.blog_main_section .author a:hover, .blog_main_section .tags a:hover{
+  color: #ff7675;
+}
+.blog_main_section .blog_foot ul li a{
+  color: #1D3157;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: 0.4s;
+}
+.blog_main_section .blog_foot ul li a:hover{
+  color: #ff7675;
+}
+.blog_main_section .blog_foot ul{
+  list-style: none;
+}
+.blog_main_section .body .sidebar h3{
+  font-size: 1.2rem;
+  color: #fff;
+  background: #1D3157;
+  padding: 10px 30px;
+  border-radius: 5px;
+}
+.blog_main_section .body .sidebar a{
+  text-decoration: none;
+  
+  transition: 0.4s;
+  font-size: 1.1rem;}
+.blog_main_section .body .sidebar a i{
+  margin-right: 15px;
+}
+.blog_main_section .body .sidebar .ul_anim{
+  list-style-type: none;
+  margin: 6px;
+  transition: .3s all ease;
+  padding: 5px;
+  text-align: center;
+}
+.blog_main_section .body .sidebar .posts .ul_anim li a{
+  text-decoration: none;
+  color: #000;
+}
+.blog_main_section .body .sidebar .posts .ul_anim li{
+  transition: 0.4s;
+  width: 100%;
+  margin-bottom: 15px;
+  padding-top: 8px;
+  font-weight: 500;
+  padding-bottom: 8px;
+  border-radius: 5px;
+  box-shadow: 0.5px 0px 2px rgba(0,0,0,0.2);
+  transition: 0.4s;
+  background: rgba(0,0,0,0.03);
+}
+.blog_main_section .body .sidebar .ul_anim li i{
+  color: #000;
+}
+.blog_main_section .body .sidebar .ul_anim li:hover {
+  background: rgba(0, 0, 0,0.7);
+  color: #fff;
+}
+.blog_main_section .body .sidebar .ul_anim li:hover a{
+  color: #fff;
+}
+.blog_main_section .body .sidebar .ul_anim li:hover i{
+  color: #fff;
+}
+@media only screen and (max-width: 600px) {
+  .blog_main_section .body{
+  margin: auto 0px;
+}.blog_main_section .blog_img{
+  width: 100%;
+  height: 40vh;
+}.blog_main_section .header_blog{
+  background-color: #e7e5e4;
+  padding: 70px 10px;
+  box-shadow: 1px 6px 10px rgba(0,0,0,0.3);
+}
+}

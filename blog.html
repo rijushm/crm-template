@@ -22,7 +22,7 @@
 			      <li class="nav-item ">
 			        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
 			      </li>
-			      <li class="nav-item active">
+			      <li class="nav-item">
 			        <a class="nav-link" href="about.html">About</a>
 			      </li>
 			      <li class="nav-item">
@@ -48,7 +48,7 @@
 
 
 
-<section class="blog_main_section">
+<section class="blog_main_section mt-4">
 
 	<div class="header_blog">
 		<div class="container">
@@ -63,7 +63,7 @@
 					<p>
 						<span>
 							<a href="#">Home</a>
-							<span>/</span>
+							<span class="text-light">/</span>
 							<a href="#">Blog title</a>
 						</span>
 					</p>
@@ -83,15 +83,19 @@
 					<div class="col-sm-6">
 						<p class="">
 							Posted by: 
+
+							<!-- author name -->
 							<span class="author">
 								<a href="">John Doe</a>
 							</span>
 						</p>
 					</div>
 
-					<div class="col-sm-6 text-right">
+					<div class="col-sm-6 text-sm-right">
 						<p class="">
 							Tags: 
+
+							<!-- header tags  -->
 							<span class="tags">
 								<a href="" class="tags1">John</a>,
 								<a href="" class="tags2">Doe</a>,
@@ -102,13 +106,17 @@
 				</div>
 
 				<div class="blog_img">
-					<div class="category">
-					</div>
+					<div id="loader"></div>
+
+					<!-- blog image  -->
+					<img src="img/blog.jpg" class="img img-fluid rounded" id="imgDiv" onload="myFunction()">
 				</div>
+
+				<!-- blog body start -->
 
 				<div class="blog_body py-4">
 					<p class="">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. li Lorem ipsum dolor 
 					</p>
 
 					<h3 class="">
@@ -141,6 +149,9 @@
 
 				<div class="blog_foot" >
 					<h3 class="">More blogs related to <span class="tag">Demo</span></h3>
+
+					<!-- related blog -->
+
 					<ul class="">
 						<li>
 							<a href="" class="">Blog demo 1</a>
@@ -166,13 +177,6 @@
 				<h3 class="sidebar_header mt-sm-2">
 					Recent Posts
 				</h3>
-
-				<!-- <a href="" class="post1 "><i class="fas fa-pen"></i><span>This is the demo blog</span></a>
-				<hr class="my-2">
-				<a href="" class="post1 "><i class="fas fa-pen"></i><span>This is the demo blog</span></a>
-				<hr class="my-2">
-				<a href="" class="post1 "><i class="fas fa-pen"></i><span>This is the demo blog</span></a>
-				<hr class="my-2"> -->
 
 				<div class="posts">
 					<ul class="ul_anim">
@@ -309,6 +313,24 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" />
+<script src="js/scroll-out.js"></script>
+
+<script type="text/javascript">
+var myVar;
+
+
+function myFunction() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("imgDiv").style.display = "block";
+}
+</script>
+
+
+<script type="text/javascript">
+	ScrollOut({
+	targets:'h3,h2,span,li'
+	});
+</script>
 
 
 </body>

@@ -81,6 +81,18 @@ header{
   text-decoration: none;
   border-radius: 5px 0px 0px 5px;
 }
+.headersec .search_2 .search_btn1 input{
+  padding: auto 15px auto 5px;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #fff;
+  width: 7rem;
+}
+.headersec .search_2 .search_btn1 input::placeholder {
+  color: #fff;
+  opacity: 1;
+}
 .headersec .search_2 .search_input{
   padding: 6.5px 15px;
   color: #000;
@@ -95,70 +107,30 @@ header{
   border: none;
   outline: none;
   width: 30rem;
-  background: red;
+  background: #ff6348;
   margin-left: -5px;
 }
 
-@media only screen and (max-width: 600px){
-  .headersec .header-content{
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-   .headersec .search_2 .search_btn1 span{
-    display: none;
-   }
-  .headersec .search_2 .search_btn1{
-  padding: 13.2px 15px;
-  background: rgba(255,255,255,0.4);
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px 0px 0px 5px;
-}
-.headersec .search_2 .search_input{
-  padding: 10px 15px;
-  color: #000;
-  border: none;
-  outline: none;
-  width: 16rem;
-  border-radius: 0px;
- /* margin-bottom: 20px;
-  margin-top: 20px;*/
-}
-.headersec .search_2 .search_btn2{
-  padding: 13px 25px;
-  color: #fff;
-  border-radius:0px 5px 5px 0px;
-  border: none;
-  outline: none;
-  width: 30rem;
-  background: red;
-  margin-left: -5px;
-}
-.service{
-  margin-top: -30px;
-}
-}
+
 @media only screen and (max-width: 768px){
   .headersec .header-content{
   margin-top: 70px;
   margin-bottom: 0px;
 }
-   .headersec .search_2 .search_btn1 span{
-    display: none;
-   }
   .headersec .search_2 .search_btn1{
   padding: 13.2px 15px;
   background: rgba(255,255,255,0.2);
   color: #fff;
   text-decoration: none;
-  border-radius: 5px 0px 0px 5px;
+  border-radius: 5px;
+  margin-bottom: 10px;
 }
 .headersec .search_2 .search_input{
   padding: 10px 15px;
   color: #000;
   border: none;
   outline: none;
-  width: 14rem;
+  width: 20rem;
   border-radius: 0px;
  /* margin-bottom: 20px;
   margin-top: 20px;*/

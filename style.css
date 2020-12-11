@@ -10,7 +10,6 @@ body{
 .headersec{
 	position: relative;
 	overflow-x: hidden;
-	position: relative;
 	z-index: 100;
 	clip-path: ellipse(150vh 150vh at 50% -93vh);
 	width: 100%;
@@ -18,10 +17,28 @@ body{
   transform: scale(1.6);
 	margin-top: -70px;
 }
+.swiper-container {
+    width: 100%;
+    height: 60vh;
+    background: ;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1000;
+}
+.swiper-container #slider_img {
+  background-position: center;
+  background-size: cover; 
+  background-repeat: no-repeat;
+}
 
 .headersec main{
 	width: 100%;
 	height: 80%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
 	display: flex;
   transform: scale(0.7);
 	justify-content: center;
@@ -87,7 +104,7 @@ header{
   outline: none;
   background: transparent;
   color: #fff;
-  width: 7rem;
+  width: 9rem;
 }
 .headersec .search_2 .search_btn1 input::placeholder {
   color: #fff;
@@ -101,59 +118,82 @@ header{
   width: 35rem;
 }
 .headersec .search_2 .search_btn2{
-  padding: 10px 25px;
+  width: 5rem;
+  padding: 7px 15px;
   color: #fff;
   border-radius: 0px 5px 5px 0px;
   border: none;
   outline: none;
-  width: 30rem;
   background: #ff6348;
   margin-left: -5px;
+}
+ .location ul {
+  position: absolute;
+  list-style-type: none;
+  top: 34.5%;
+  left: 19.7%;
+  z-index: 20000;
+  margin: 0;
+  padding: 0;
+  width: 15rem;
+  border-radius: 5px;
+  background-color: rgba(255,255,255,0.8);
+}
+ .location li a {
+  text-align: center;
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+ .location li a:hover {
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+  color: #fff;
 }
 
 
 @media only screen and (max-width: 768px){
+  .swiper-container {
+    outline: none;
+}
   .headersec .header-content{
   margin-top: 70px;
-  margin-bottom: 0px;
+  margin-bottom: 40px;
+}
+.headersec .header-content h2{
+  margin-bottom: 50px;
 }
   .headersec .search_2 .search_btn1{
   padding: 13.2px 15px;
-  background: rgba(255,255,255,0.2);
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-  margin-bottom: 10px;
+  background: rgba(255,255,255,1);
+  color: rgba(0,0,0,0.8);
+}
+.headersec .search_2 .search_btn1 input{
+  width: 4rem;
+}
+.headersec .search_2 .search_btn1 input::placeholder {
+  color: #000;
+  opacity: 0.5;
 }
 .headersec .search_2 .search_input{
   padding: 10px 15px;
   color: #000;
   border: none;
   outline: none;
-  width: 20rem;
-  border-radius: 0px;
- /* margin-bottom: 20px;
-  margin-top: 20px;*/
+  width: 12rem;
+  border-radius: 0px 0px 0px 0px;
 }
 .headersec .search_2 .search_btn2{
-  padding: 13px 25px;
+  padding: 14px 20px;
   color: #fff;
   border-radius:0px 5px 5px 0px;
-  border: none;
-  outline: none;
-  width: 30rem;
-  background: red;
-  margin-left: -5px;
 }
 .service{
-  margin-top: -10px;
+  margin-top: -40px;
 }
 }
-
-
-
-
-
 
 
 

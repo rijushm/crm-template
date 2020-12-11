@@ -1211,7 +1211,8 @@ body{
   text-decoration: none;
   
   transition: 0.4s;
-  font-size: 1.1rem;}
+  font-size: 1.1rem;
+}
 .blog_main_section .body .sidebar a i{
   margin-right: 15px;
 }

@@ -8,6 +8,8 @@
 <link rel="stylesheet" type="text/css" href="style.css">
 <!-- owl carousel link -->
 <link rel="stylesheet" type="text/css" href="OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\dist\assets\owl.carousel.css">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 <link rel="stylesheet" type="text/css" href="OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\dist\assets\owl.theme.default.min.css">
 <style type="text/css">
 	@media only screen and (max-width: 600px) {
@@ -67,37 +69,53 @@
 			  </div>
 			</nav>
 		</header>
+
 		
-			<section class="headersec" style="background:url(img/back1.jpg);
-	background-position: center;
-	background-size: cover; 
-	background-repeat: no-repeat;">			
+		
+			<section class="headersec" >	
+
+	<!-- Slider main container -->
+		<div class="swiper-container">
+		    <!-- Additional required wrapper -->
+		    <div class="swiper-wrapper">
+		        <!-- Slides -->
+		        <div class="swiper-slide" id="slider_img" style="background:linear-gradient(0deg,rgba(0,0,0,0.2),rgba(0,0,0,0.5)), url(img/back.jpg);background-position: center;
+					  background-size: cover; 
+					  background-repeat: no-repeat;">
+		        	
+		        </div>
+		        <div class="swiper-slide" id="slider_img" style="background:linear-gradient(0deg,rgba(0,0,0,0.2),rgba(0,0,0,0.5)), url(img/blog.jpg);background-position: center;
+					  background-size: cover; 
+					  background-repeat: no-repeat;">
+		        	
+		        </div>
+		        <div class="swiper-slide" id="slider_img" style="background:linear-gradient(0deg,rgba(0,0,0,0.2),rgba(0,0,0,0.5)), url(img/back.jpg);background-position: center;
+					  background-size: cover; 
+					  background-repeat: no-repeat;">
+		        	
+		        </div>
+		    </div>
+		</div>		
           <main>
 			<div class="header-content">
 				<h2 class="text-light my-3">SEARCH FOR SERVICE NEAR BY</h2>
 
-				<!-- <div class="search">
-					<select name="service" id="select-service-drop" style="width:700px" class="form-control">
-				        <option value="santa barbara">Service</option>
-				        <option value="san fransisco">San Fransisco</option>
-				        <option value="los angeles">Los Angeles</option>
-				        <option value="san diego">San Diego</option>
-				        <option value="portland">Portland</option>
-				      </select>
-	                   <input class="mr-4 btn btn-primary home-secondary-cta ml-1"  value="Search" type="submit">
-                  </div> -->
-
                   <div class="search_2">
-                  	<span class="search_btn1">
+                  	<form action="" method="">
+                  		<span class="search_btn1">
                   		<i class="fa fa-map-marker" aria-hidden="true" class=""></i>
                   		<span>
                   			<input type="name" name="" placeholder="USA" class="pr-3 pl-1">
                   		</span>
-                  	</span>
+	                  	</span>
 
-                  	<input type="name" name="" class="search_input" id="search" placeholder="Service Near Me">
+	                  	<input type="name" name="" class="search_input" id="search" placeholder="Service Near Me">
 
-                  	<a href="" class="search_btn2"><i class="fa fa-search" aria-hidden="true"></i></a>
+	                  	<button class="search_btn2"><i class="fa fa-search" aria-hidden="true"></i></button>
+                  	</form>
+
+                  	
+
                   </div>
 
                     <p class="text-light mt-4">OR</p>
@@ -105,6 +123,15 @@
 			</div>
 			</main>
 		</section>
+		<!-- location list here -->
+		            <div class="location">
+                  		<ul class="location_list">
+						  <li><a href="#home">New York, USA</a></li>
+						  <li><a href="#news">California, USA</a></li>
+						  <li><a href="#contact">Washington, USA</a></li>
+						  <li><a href="#about">Canada, USA</a></li>
+						</ul>
+                  	</div>
 	
 
 
@@ -469,6 +496,8 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script type="text/javascript" src="OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\docs\assets\vendors\jquery.min.js"></script>
 <script type="text/javascript" src="OwlCarousel2-2.3.4\OwlCarousel2-2.3.4\dist\owl.carousel.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
 <script type="text/javascript">
 	$('.owl-carousel').owlCarousel({
@@ -489,7 +518,20 @@
             items:5
         }
     }
-})
+});
+
+</script>
+<script type="text/javascript">
+	var mySwiper = new Swiper('.swiper-container', {
+	  // Optional parameters
+	  direction: 'horizontal',
+	  loop: true,
+	  effect:'fade',
+	  autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      }
+	})
 </script>
 
 

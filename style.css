@@ -92,19 +92,19 @@ header{
 
 
 .headersec .search_2 .search_btn1{
-  padding: 10px 25px;
+  padding: 10px 0px 10px 25px;
   background: rgba(255,255,255,0.4);
   color: #fff;
   text-decoration: none;
   border-radius: 5px 0px 0px 5px;
 }
 .headersec .search_2 .search_btn1 input{
-  padding: auto 15px auto 5px;
+  padding: auto 5px auto 5px;
   border: none;
   outline: none;
   background: transparent;
   color: #fff;
-  width: 9rem;
+  width: 12rem;
 }
 .headersec .search_2 .search_btn1 input::placeholder {
   color: #fff;
@@ -139,6 +139,41 @@ header{
   border-radius: 5px;
   background-color: rgba(255,255,255,0.8);
 }
+
+.location ul li{
+  padding: 10px auto;
+  text-align: center;
+  cursor: pointer;
+}
+.location ul li:hover{
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+}
+
+ .service ul {
+  position: absolute;
+  list-style-type: none;
+  top: 34.5%;
+  left:38%;
+  z-index: 20000;
+  margin: 0;
+  padding: 0;
+  width: 15rem;
+  border-radius: 5px;
+  background-color: rgba(255,255,255,0.8);
+}
+
+.service ul li{
+  padding: 10px auto;
+  color: #000;
+  text-align: center;
+  cursor: pointer;
+}
+.service ul li:hover{
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+}
+/*
  .location li a {
   text-align: center;
   display: block;
@@ -151,7 +186,7 @@ header{
   background-color: rgba(0,0,0,0.5);
   color: white;
   color: #fff;
-}
+}*/
 
 
 @media only screen and (max-width: 768px){
@@ -186,7 +221,7 @@ header{
   border-radius: 0px 0px 0px 0px;
 }
 .headersec .search_2 .search_btn2{
-  padding: 14px 20px;
+  padding: 12px 20px;
   color: #fff;
   border-radius:0px 5px 5px 0px;
 }
